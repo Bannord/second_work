@@ -1,0 +1,66 @@
+.download {
+    padding-top: 99px;
+    padding-bottom: 99px;
+    
+
+    .container {
+        transition: 0.3s;
+    }
+
+  
+
+    
+
+        .download_title {
+            font-size: 28px;
+            text-align: center;
+            color: #2D3033;
+            margin-bottom: 16px;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            text-align: center;
+            color: #2D3033;
+            margin-bottom: 39px;
+        }
+
+        .download_btn {
+            display: block;
+            margin: auto;
+            width: 281px;
+            background-color: #E84545;
+            color: #FCEBEB;
+            text-align: center;
+            padding: 19px 0;
+            transition: 0.5s;
+
+
+            &:hover {
+                background-color: blue;
+            }
+        }
+
+        @media (max-width:786px) {
+            .download {
+                padding-bottom: 99px;
+            }
+            .download_title {
+                font-size: 20px;
+                text-align: center;
+            }
+
+            .subtitle {
+                font-size: 14px;
+                max-width: 300px;
+                margin: 0px auto 15px;
+            }
+
+            .download_btn {
+                width: 150px;
+                padding: auto 11px;
+            }
+        }
+}
+   
+

@@ -1,0 +1,19 @@
+.footer {
+    background: #313454;
+    padding: 30px 0;
+
+    .footer_content {
+        max-width: 312px;
+       
+        margin: auto;
+        color: #808080;
+
+        .fa-heart {
+            color: red;
+        }
+
+        span {
+            color: #FFFF;
+        }
+    }
+}

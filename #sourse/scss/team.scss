@@ -1,0 +1,141 @@
+.team {
+    padding-top: 101px;
+    padding-bottom: 99px;
+
+    .team_row {
+       
+        
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 -15px;
+
+        .team_card_item {
+            max-width: 272px;
+           
+            margin-bottom: 30px;
+            
+
+
+            .img {
+                width: 270px;
+                height: 270px;
+                margin-bottom: 30px;
+
+                img {
+                    height: 100%;
+                }
+                
+                
+            }
+
+            .title_name {
+                font-size: 22px;
+                color: #2D3033;
+                line-height: 17px;
+                margin-bottom: 16px;
+            }
+            .title_post {
+                font-size: 16px;
+                color: #E84545;
+                margin-bottom: 29px;
+            }
+
+            .card_item {
+                max-width: 265px;
+                font-size: 16px;
+                color: #6C7279;
+                margin-bottom: 30px;
+            }
+
+            .team_links {
+                display: flex;
+                transition: 0.2s;
+
+               
+                
+
+
+                .img_link {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 4px;
+                    width: 40px;
+                    height: 40px;
+                    border: 1px solid #6C7279;
+                    text-align: center;
+                    transition: 0.3s;
+
+                    .fa-facebook-f:hover {
+                        color: green;
+                    }
+    
+                    .fa-twitter:hover {
+                        color: blue;
+                    }
+    
+                    .fa-instagram:hover {
+                        color: red;
+                    }
+
+                    
+
+                    
+
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                    
+
+                   
+
+                   
+
+                  
+                
+            }
+        }
+    }
+    
+}
+@media (max-width: 850px) {
+    .team_row {
+        display: flex;
+        justify-content: center;
+
+        .team_card_item {
+            text-align: center;
+            .img {
+                width: 200px;
+                height: 200px;
+                margin: 30px auto;
+               img {
+                border-radius: 50%;
+               }
+            }
+            .title_name {
+                font-size: 16px;
+            }
+
+            .title_post {
+                font-size: 14px;
+            }
+
+            .card_item {
+                font-size: 14px;
+            }
+
+            .team_links {
+                justify-content: center;
+            }
+        }
+    }
+
+
+}
+}
+@media (max-width: 830px) {
+    .team {padding-top: 0px ;}
+}

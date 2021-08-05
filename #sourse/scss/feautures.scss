@@ -1,0 +1,135 @@
+@media (max-width:950px) {
+    .feautures-row {
+        display: flex;
+        
+    }
+    
+}
+
+.feautures {
+    background-color: white;
+    padding-top: 119px;
+    padding-bottom: 100px;
+
+
+
+
+    .feautures-row {
+       
+        
+        
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap ;
+        margin-bottom: 74px;
+
+        .feautures_item_start {
+            max-width: 320px;
+            margin: 0 -15px;
+        
+        
+        
+        .item_img {
+            width: 70px;
+            height: 70px;
+            margin: auto;
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 35px;
+        }
+        
+            .feautures_item_title {
+               
+                text-align: center;
+                margin-bottom: 25px;
+                font-size: 14px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            .ft_item_subtitle {
+                
+                text-align: center;
+                color: #6C7279;
+                font-size: 14px;
+                line-height: 21px;
+            }
+
+           
+
+        }
+    
+        
+
+            
+            
+
+        }
+
+    .feautures-second_row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .feautures_item_start {
+            max-width: 320px;
+            margin: 0 -15px;
+        
+        
+        
+        .item_img {
+            width: 70px;
+            height: 70px;
+            margin: auto;
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 35px;
+        }
+        
+            .feautures_item_title {
+               
+                text-align: center;
+                margin-bottom: 25px;
+                font-size: 14px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            .ft_item_subtitle {
+                
+                text-align: center;
+                color: #6C7279;
+                font-size: 14px;
+                line-height: 21px;
+            }
+
+           
+
+        }
+    }
+
+    @media (max-width:700px) {
+        .feautures-row {
+            flex-direction: column;
+            align-content: center;
+            margin-bottom: 0px;
+
+            .feautures_item_start {
+                margin-bottom: 30px;
+            }
+        }
+        .feautures-second_row {
+                flex-direction: column;
+                align-content: center;
+
+                .feautures_item_start {
+                    margin-bottom: 30px;
+                }
+            }
+       
+    }
+    }
+
+

@@ -1,0 +1,107 @@
+.gallery__body {
+    
+    display: grid;
+    gap: 1px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    /* grid-template-columns: repeat(4, minmax(200px, 1fr)); */
+    @media (max-width: 830px){
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(2, minmax(200px, 1fr)); 
+        .gallery__item:nth-child(odd) {
+            display: none;
+            
+        }
+        .gallery__item:nth-child(even) {
+            overflow: hidden;
+            
+        }      
+        
+    }
+    @media (max-width: 500px){
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: repeat(1, minmax(200px, 350px));
+    max-width: 350px;
+    margin: 0 auto;
+
+    .gallery__item:nth-child(odd) {
+        display: none;
+        visibility: hidden;
+    }
+    }
+}
+.gallery__item {
+    position: relative;
+    /* padding: 0px 0px 85% 0px; */
+    transition: all .2s;
+
+}
+.gallery__link::before {
+    content: '';
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background-color: rgba(232, 69, 69, 0.7);
+    transition: all .2s; 
+    opacity: 0; 
+    
+}
+.gallery__foto {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    object-fit: cover;
+    transition: all .2s;
+    
+
+}
+
+.gallery__title {
+    position: absolute;
+    z-index: 5;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-transform: uppercase;
+    width: 120px;
+    transition: .2s;
+    text-align: center;
+    
+    font-size: 14px;
+    font-weight: 700;
+    opacity: 0;
+}
+.gallery__subtitle {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-transform: uppercase;
+    width: 180px;
+    transition: .2s;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0;
+}
+.gallery__item:hover .gallery__title,
+.gallery__item:hover .gallery__subtitle {
+    opacity: 1;
+}
+.gallery__item:hover .gallery__foto{
+    transform: scale(1.1);
+    z-index: 3;
+}
+
+.gallery__item:hover .gallery__link::before{
+    opacity: 1;
+    transform: scale(1.1);
+    z-index: 4;
+}

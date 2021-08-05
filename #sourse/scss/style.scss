@@ -1,0 +1,31 @@
+
+ body.lock {
+  overflow: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Cardo', serif;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  
+  
+  .container {
+      max-width: 1170px;
+      padding: 0 15px;
+      margin: auto;
+      
+    }
+
+    @import './header.scss';
+    @import './feautures.scss';
+    @import './work.scss';
+    @import './team.scss';
+    @import './slider.scss';
+    @import './download.scss';
+    @import './footer.scss';
+    @import './about.scss';
