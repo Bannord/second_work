@@ -5,6 +5,17 @@ $(document).ready(function() {
         adaptiveHeight:true,
         autoplay:true,
         autoplaySpeed:2000,
+        infinite: true,
+        swipe: true,
+        responsive: [
+          {
+          breakpoint: 1024,
+          settings: {
+
+          } 
+        }
+        ]
+        
     });
 
     // плавная прокрутка//

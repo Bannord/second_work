@@ -391,94 +391,22 @@ body.lock {
 }
 @media (max-width: 830px) {
   .gallery__body {
-    -ms-grid-rows: (1fr)[4];
-    grid-template-rows: repeat(4, 1fr);
     -ms-grid-columns: (minmax(200px, 1fr))[2];
     grid-template-columns: repeat(2, minmax(200px, 1fr));
   }
-  .gallery__body > *:nth-child(1) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-  .gallery__body > *:nth-child(2) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-  }
-  .gallery__body > *:nth-child(3) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-  }
-  .gallery__body > *:nth-child(4) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
-  }
-  .gallery__body > *:nth-child(5) {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-  }
-  .gallery__body > *:nth-child(6) {
-    -ms-grid-row: 3;
-    -ms-grid-column: 2;
-  }
-  .gallery__body > *:nth-child(7) {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-  }
-  .gallery__body > *:nth-child(8) {
-    -ms-grid-row: 4;
-    -ms-grid-column: 2;
-  }
-  .gallery__body .gallery__item:nth-child(odd) {
+  .gallery__body .gallery__item:nth-child(3n) {
     display: none;
-  }
-  .gallery__body .gallery__item:nth-child(even) {
-    overflow: hidden;
   }
 }
 @media (max-width: 500px) {
   .gallery__body {
-    -ms-grid-rows: (1fr)[8];
-    grid-template-rows: repeat(8, 1fr);
     -ms-grid-columns: (minmax(200px, 350px))[1];
     grid-template-columns: repeat(1, minmax(200px, 350px));
     max-width: 350px;
     margin: 0 auto;
   }
-  .gallery__body > *:nth-child(1) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-  .gallery__body > *:nth-child(2) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-  }
-  .gallery__body > *:nth-child(3) {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-  }
-  .gallery__body > *:nth-child(4) {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-  }
-  .gallery__body > *:nth-child(5) {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
-  }
-  .gallery__body > *:nth-child(6) {
-    -ms-grid-row: 6;
-    -ms-grid-column: 1;
-  }
-  .gallery__body > *:nth-child(7) {
-    -ms-grid-row: 7;
-    -ms-grid-column: 1;
-  }
-  .gallery__body > *:nth-child(8) {
-    -ms-grid-row: 8;
-    -ms-grid-column: 1;
-  }
-  .gallery__body .gallery__item:nth-child(odd) {
+  .gallery__body .gallery__item:nth-child(3n) {
     display: none;
-    visibility: hidden;
   }
 }
 
@@ -665,7 +593,7 @@ body.lock {
   .team .team_row .team_card_item .img {
     width: 200px;
     height: 200px;
-    margin: 30px auto;
+    margin: 40px;
   }
   .team .team_row .team_card_item .img img {
     border-radius: 50%;

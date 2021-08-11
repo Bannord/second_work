@@ -6,28 +6,26 @@
     grid-template-columns: repeat(4, minmax(200px, 1fr));
     /* grid-template-columns: repeat(4, minmax(200px, 1fr)); */
     @media (max-width: 830px){
-        grid-template-rows: repeat(4, 1fr);
+        
         grid-template-columns: repeat(2, minmax(200px, 1fr)); 
-        .gallery__item:nth-child(odd) {
+        .gallery__item:nth-child(3n) {
             display: none;
             
         }
-        .gallery__item:nth-child(even) {
-            overflow: hidden;
-            
-        }      
-        
+       
+       
     }
     @media (max-width: 500px){
-    grid-template-rows: repeat(8, 1fr);
+    
     grid-template-columns: repeat(1, minmax(200px, 350px));
     max-width: 350px;
     margin: 0 auto;
 
-    .gallery__item:nth-child(odd) {
+    .gallery__item:nth-child(3n) {
         display: none;
-        visibility: hidden;
+        
     }
+   
     }
 }
 .gallery__item {
